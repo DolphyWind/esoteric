@@ -1,2 +1,2 @@
 # brainf
-A brainfuck interpeter written in C
+A brainfuck interpreter written in C
