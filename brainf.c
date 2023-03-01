@@ -27,10 +27,18 @@ int main(int argc, char** argv)
 		return 1;
 	}
 	
+	#ifdef SIGINT
 	signal(SIGINT, interruptHandler);
+	#endif
+	#ifdef SIGTERM
 	signal(SIGTERM, interruptHandler);
+	#endif
+	#ifdef SIGQUIT
 	signal(SIGQUIT, interruptHandler);
+	#endif
+	#ifdef SIGKILL
 	signal(SIGKILL, interruptHandler);
+	#endif
 	
 	// Read file content into bfcode
 	FILE *f = fopen(argv[1], "r");
