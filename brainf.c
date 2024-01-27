@@ -100,7 +100,11 @@ int main(int argc, char** argv)
 		else if(current == '.')
 			putchar(memory[currentCell]);
 		else if(current == ',')
-			memory[currentCell] = getchar();
+		{
+			unsigned char c = getchar();
+			if(c == 255) c = 0;
+			memory[currentCell] = c;
+		}
 		else if(current == '[')
 		{
 			if(!memory[currentCell])
