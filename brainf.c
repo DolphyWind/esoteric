@@ -58,7 +58,6 @@ int main(int argc, char** argv)
 		{
 			fprintf(stderr, "An error occured!\n");
 			fclose(f);
-			free(bfcode);
 		}
 
 		fclose(f);
@@ -72,11 +71,12 @@ int main(int argc, char** argv)
 	size_t loopCount = 0;
 	size_t currentCell = 0;
     
-    // Loop stack
-	size_t *loopPositions = calloc(MAX_LOOPS, sizeof(size_t));
 	// Memory tape
-	unsigned char *memory = calloc(N, sizeof(unsigned char));
-    
+	unsigned char memory[N];
+
+	// Loop stack
+	size_t loopPositions[MAX_LOOPS];
+
     // Interpereter
 	for(i = 0; i < codeLength; i++)
 	{
@@ -93,9 +93,10 @@ int main(int argc, char** argv)
 		}
 		else if(current == '<')
 		{
-			currentCell --;
-			if(currentCell < 0)
+			if(currentCell == 0)
 				currentCell = N - 1;
+			else
+				currentCell --;
 		}
 		else if(current == '.')
 			putchar(memory[currentCell]);
@@ -138,8 +139,6 @@ int main(int argc, char** argv)
 		}
 	}
 
-	free(loopPositions);
-	free(memory);
 	free(bfcode);
 	return 0;
 }
