@@ -72,10 +72,10 @@ int main(int argc, char** argv)
 	size_t currentCell = 0;
     
 	// Memory tape
-	unsigned char memory[N];
+	unsigned char memory[N] = {0};
 
 	// Loop stack
-	size_t loopPositions[MAX_LOOPS];
+	size_t loopPositions[MAX_LOOPS] = {0};
 
     // Interpereter
 	for(i = 0; i < codeLength; i++)
