@@ -1,0 +1,15 @@
+ROT
+JMP
+MOV 0
+
+ADD
+JE
+MOV "\n"
+JE
+MOV 1
+JL
+ADD
+DIV
+MUL
+DUP
+SUB 4

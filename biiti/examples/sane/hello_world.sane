@@ -1,0 +1,2 @@
+PUSH "Hello World!\n"
+PRINT

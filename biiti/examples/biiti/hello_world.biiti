@@ -1,0 +1,2 @@
+MOV "Hello World!\n"
+JE
