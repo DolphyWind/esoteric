@@ -56,7 +56,7 @@ runCommand Cmp = do
     v2 <- popStack
 
     interpreter <- lift ST.get
-    case compareVariable v1 v2 of
+    case compareVariable v2 v1 of
         Left err -> ET.throwE err
         Right c -> lift $ ST.put interpreter {getCmp = c}
 
