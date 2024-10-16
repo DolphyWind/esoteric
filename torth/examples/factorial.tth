@@ -1,0 +1,2 @@
+: FAC DUP 1 - IF FAC * ELSE DROP THEN ;
+10 FAC .

@@ -1,0 +1,13 @@
+olus2oOo WRITE_9 olus2o0O olus2OoO "ERROR" olus2o0o olus2OoO "9" olus2oO0 olus2oo0 olus2oOo WRITE_8 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_9 olus2o0o olus2OoO "8"
+olus2oO0 olus2oo0 olus2oOo WRITE_7 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_8 olus2o0o olus2OoO "7" olus2oO0 olus2oo0 olus2oOo WRITE_6 olus2o0O 0lus2000! olus200O
+olus2000! olus20O0 WRITE_7 olus2o0o olus2OoO "6" olus2oO0 olus2oo0 olus2oOo WRITE_5 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_6 olus2o0o olus2OoO "5" olus2oO0
+olus2oo0 olus2oOo WRITE_4 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_5 olus2o0o olus2OoO "4" olus2oO0 olus2oo0 olus2oOo WRITE_3 olus2o0O 0lus2000! olus200O olus2000!
+olus20O0 WRITE_4 olus2o0o olus2OoO "3" olus2oO0 olus2oo0 olus2oOo WRITE_2 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_3 olus2o0o olus2OoO "2" olus2oO0 olus2oo0 olus2oOo
+WRITE_1 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_2 olus2o0o olus2OoO "1" olus2oO0 olus2oo0 olus2oOo WRITE_0 olus2o0O 0lus2000! olus200O olus2000! olus20O0 WRITE_1
+olus2o0o olus2OoO "0" olus2oO0 olus2oo0 olus2oOo WRITE_HELPER olus2o00 olus2o0O olus2OoO 0lus2000! olus200O olus2000! olus200o olus2o0O 0lus2000! olus200O olus2000! olus20O0
+olus2o0o olus2OoO WRITE_0 WRITE_HELPER olus2oO0 olus2o0o olus2OoO olus2oO0 olus2oo0 olus2oOo WRITE_NUM olus2o0O olus2OOo 0lus2000! olus2O0O olus2000! olus20o0 olus2Oo0 0lus2ooo!
+olus200O olus2000! olus2Oo0 0lus2000! olus2O0O olus2000! olus20Oo WRITE_NUM olus2o0o olus2OoO WRITE_HELPER olus2oO0 olus2oo0 olus2oOo BOTTLES olus2OOo 0lus2000! olus200O
+olus2000! olus20O0 olus2o0O olus2OoO "bottles" olus2o0o olus2OoO "bottle" olus2oO0 olus2oo0 olus2oOo LAST_LINE olus2OOo olus2o0O WRITE_NUM olus2o0o olus2OoO "No more" olus2oO0
+" " BOTTLES " of beer on the wall.\n\n" olus2oo0 olus2oOo BEER_REGULAR olus2OOo WRITE_NUM " " BOTTLES " of beer on the wall,\n" olus2OOo WRITE_NUM " " BOTTLES
+" of beer.\nTake one down, pass it around\n" 0lus2000! olus200O olus2000! olus20O0 LAST_LINE olus2oo0 olus2oOo BEER olus2OOo olus2o0O BEER_REGULAR BEER olus2oO0 olus2oo0
+0lus2000! olus20O0 olus2o00 olus2000! BEER 

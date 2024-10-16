@@ -1,0 +1,35 @@
+: PRINT_3 IF DROP "ERROR" ELSE DROP "3" THEN ;
+: PRINT_2 IF 1 - PRINT_3 ELSE DROP "2" THEN ;
+: PRINT_1 IF 1 - PRINT_2 ELSE DROP "1" THEN ;
+: PRINT_NUM 1 - PRINT_1 ;
+
+: PRINT_STACK (For debug purposes) DEPTH IF DROP "[ " . " ]\n" PRINT_STACK THEN ;
+
+: OPERATE_BODY
+    DUP ROT SWAP DUP ROT == 
+    IF
+        DROP 0 GET 1 + 0 SWAP SET DROP
+    ELSE
+        DROP DUP 0 SWAP SET 0 1 SET SWAP DROP
+    THEN
+;
+
+: OPERATE
+    SWAP DUP -1 !=
+    WHILE
+        DROP SWAP OPERATE_BODY SWAP DUP -1 !=
+    THEN
+    DROP SWAP DROP DROP
+;
+
+: STEP
+    OPERATE REVERSE DEPTH
+    WHILE
+        SWAP DUP PRINT_NUM 0 SWAP SET 1 -
+    THEN "\n" DROP -1 REVERSE 0
+;
+
+
+(Initial state of the stack) -1 1 0
+(Print 1) 1 PRINT_NUM "\n"
+(Print the look and say sequence indefinitely) 1 WHILE DROP STEP 1 THEN

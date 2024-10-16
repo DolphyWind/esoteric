@@ -1,0 +1,2 @@
+: FIB 1 . "\n" 0 1 1 WHILE DROP DUP ROT + DUP . "\n" DUP 222222222 < THEN ;
+FIB
